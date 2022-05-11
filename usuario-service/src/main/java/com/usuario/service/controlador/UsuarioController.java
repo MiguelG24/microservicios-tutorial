@@ -87,6 +87,7 @@ public class UsuarioController {
 		return ResponseEntity.ok(nuevaMoto);
 	}
 	
+	//Obtener datos del usuario y de todos sus vehiculos
 	@GetMapping("/todos/{usuarioId}")
 	public ResponseEntity<Map<String, Object>> listarTodosLosVehiculos(@PathVariable("usuarioId") int usuarioId){
 		Map<String, Object> resultado = usuarioService.getUsuarioAndVehiculos(usuarioId);
