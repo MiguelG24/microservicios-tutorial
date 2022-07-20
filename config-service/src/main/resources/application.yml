@@ -6,7 +6,12 @@ spring:
       server:
         git:
           default-label: config-server
-          uri: https://github.com/MiguelG24/microservicios-tutorial
+          uri: https://github.com/MiguelG24/microservicios-tutorial.git
+          username: MiguelG24
+          password: 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
           search-paths: config-data
+          skip-ssl-validation: true
+          timeout: 5
+          force-pull: true
   application:
     name: config-service
